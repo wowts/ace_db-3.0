@@ -1,5 +1,4 @@
 import { LuaObj, pairs } from "@wowts/lua";
-import { Constructor, Library} from "@wowts/tslib";
 
 export interface AceDatabase extends LuaObj<any> {
     RegisterCallback: (module: any, event: string, method: string) => void;
