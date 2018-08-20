@@ -1,4 +1,4 @@
-local __exports = LibStub:NewLibrary("AceDB-3.0", 10000)
+local __exports = LibStub:NewLibrary("AceDB-3.0", 10100)
 if not __exports then return end
 local kpairs = pairs
 local lib = {
