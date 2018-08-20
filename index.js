@@ -7,7 +7,7 @@ const lib = {
             RegisterCallback: (module, event, method) => { },
             RegisterDefaults: (defaults) => { },
         };
-        for (const [k, v] of lua_1.pairs(defaultDb)) {
+        for (const [k, v] of lua_1.kpairs(defaultDb)) {
             ret[k] = v;
         }
         return ret;

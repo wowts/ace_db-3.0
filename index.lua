@@ -1,6 +1,6 @@
-local __exports = LibStub:NewLibrary("AceDb-3.0", 10000)
+local __exports = LibStub:NewLibrary("AceDB-3.0", 10000)
 if not __exports then return end
-local pairs = pairs
+local kpairs = pairs
 local lib = {
     New = function(self, name, defaultDb)
         local ret = {
@@ -9,7 +9,7 @@ local lib = {
             RegisterDefaults = function(defaults)
             end
         }
-        for k, v in pairs(defaultDb) do
+        for k, v in kpairs(defaultDb) do
             ret[k] = v
         end
         return ret

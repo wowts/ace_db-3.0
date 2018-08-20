@@ -1,4 +1,4 @@
-import { LuaObj, pairs } from "@wowts/lua";
+import { kpairs, LuaObj } from "@wowts/lua";
 
 export interface AceDatabase extends LuaObj<any> {
     RegisterCallback: (module: any, event: string, method: string) => void;
@@ -7,11 +7,11 @@ export interface AceDatabase extends LuaObj<any> {
 
 const lib = {
     New<T>(name: string, defaultDb: T): AceDatabase & T {
-        const ret = <AceDatabase & T> {
+        const ret = {
             RegisterCallback: (module: any, event: string, method: string) => {},
             RegisterDefaults: (defaults: any) => {},
-        };
-        for (const [k, v] of pairs(defaultDb)) {
+        } as AceDatabase & T;
+        for (const [k, v] of kpairs(defaultDb)) {
             ret[k] = v;
         }
         return ret;
