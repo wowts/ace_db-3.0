@@ -12,7 +12,7 @@ const lib = {
             RegisterDefaults: (defaults: any) => {},
         } as AceDatabase & T;
         for (const [k, v] of kpairs(defaultDb)) {
-            ret[k] = v;
+            (ret[k] as any) = v;
         }
         return ret;
     },
