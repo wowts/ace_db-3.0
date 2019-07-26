@@ -1,11 +1,12 @@
 {
   "name": "@wowts/ace_db-3.0",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "tstolua -j"
+    "prepare": "tsc",
+    "watch": "tsc -w"
   },
   "author": "Sidoine De Wispelaere",
   "license": "MIT",
@@ -14,7 +15,7 @@
     "@wowts/tslib": "^1.1.0"
   },
   "devDependencies": {
-    "@wowts/tstolua": "^1.6.1"
+    "typescript": "^3.5.3"
   },
   "repository": {
     "type": "git",
