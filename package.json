@@ -1,24 +1,29 @@
 {
-  "name": "@wowts/ace_db-3.0",
+    "name": "@wowts/ace_db-3.0",
   "version": "1.2.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "tsc",
     "watch": "tsc -w"
-  },
-  "author": "Sidoine De Wispelaere",
-  "license": "MIT",
-  "dependencies": {
-    "@wowts/lua": "^1.3.0",
-    "@wowts/tslib": "^1.1.0"
-  },
-  "devDependencies": {
+    },
+    "author": "Sidoine De Wispelaere",
+    "license": "MIT",
+    "dependencies": {
+        "@wowts/lua": "^1.3.0",
+        "@wowts/tslib": "^1.1.0"
+    },
+    "devDependencies": {
     "typescript": "^3.5.3"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/wowts/ace_db-3.0.git"
-  }
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/wowts/ace_db-3.0.git"
+    },
+    "lua": {
+        "name": "AceDB-3.0",
+        "svn": "https://repos.wowace.com/wow/ace3/trunk/AceDB-3.0",
+        "entry": "AceDB-3.0.xml"
+    }
 }
